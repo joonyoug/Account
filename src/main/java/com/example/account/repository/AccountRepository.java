@@ -13,7 +13,7 @@ public interface AccountRepository extends JpaRepository<Account,Long> {
     Optional<Account> findFirstByOrderByIdDesc();
     Integer countByAccountUser(AccountUser accountUser);
 
-    Optional<Account> findByAccountNumber(String AccountNumber);
+    Optional<Account> findByAccountNumber(String accountNumber);
 
     List<Account> findByAccountUser(AccountUser accountUser);
 
